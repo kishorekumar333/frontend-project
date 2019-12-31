@@ -1,1 +1,30 @@
-<p>login works!</p>
+<div class="container">
+    <div class="demo" [ngStyle]="currentStyles">
+        <h1>LOGIN</h1>
+        <div role="tabpanel">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs nav-justified nav-tabs-dropdown" role="tablist">
+                <li role="presentation" class="seekerlogin"><a  routerLink="seekerlogin" routeActivateLink='active' aria-controls="seekerlogin"
+                        role="tab" data-toggle="tab"
+                        style="background-color: darkgray; color:mediumblue; padding-right:20px; ">seekerlogin</a></li>
+                <li role="presentation" class="recruiterlogin"><a routerLink='reclogin' routeActivateLink='active'  aria-controls="recruiterlogin"
+                        role="tab" data-toggle="tab">recruiterlogin</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <!-- <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="seekerlogin">
+                    <app-seekerlogin></app-seekerlogin>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="recruiterlogin">
+                    <app-recruiterlogin></app-recruiterlogin>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    
+</div>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>

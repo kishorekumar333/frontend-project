@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,11 @@ import { JoblistComponent } from './jobseeker/dashboard/joblist/joblist.componen
 import { ProfileComponent } from './recruiter/profile/profile.component';
 import { MainviewComponent } from './recruiter/profile/mainview/mainview.component';
 import { SideviewComponent } from './recruiter/profile/sideview/sideview.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { RecruiterregisterComponent } from './auth/register/recruiterregister/recruiterregister.component';
+import { SeekerregisterComponent } from './auth/register/seekerregister/seekerregister.component';
+import { CommonDirective } from './common.directive';
+import { NavbarComponent } from './navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,12 +29,18 @@ import { SideviewComponent } from './recruiter/profile/sideview/sideview.compone
     JoblistComponent,
     ProfileComponent,
     MainviewComponent,
-    SideviewComponent
+    SideviewComponent,
+    RegisterComponent,
+    RecruiterregisterComponent,
+    SeekerregisterComponent,
+    CommonDirective,
+    NavbarComponent
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
